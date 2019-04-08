@@ -18,6 +18,7 @@
       <br>but less than <input type="number" id="income_high" :value="income_high" @input='update_income_high'>
       after school.
       <br> My average expected starting salary is about: <b>{{expected_income}}</b>
+      <br><br><i> Note: The below calculations assume that income will grow by 3% a year.</i>
 <br><br>
 <div id="value_comparison">
 <h2><i>Value Comparison</i></h2>
@@ -31,7 +32,7 @@
   <div id ="risk_comparison">
     <h2><i>Risk Comparison</i></h2>
     The risk of each option is shown as the % of your <i>lowest </i> expected starting income that will go towards repayment. If you're paying too much of what you earn towards loans (e.g. 20% or more), you could be at risk of defaulting.
-    <br> Loan estimated repayments as % of starting salary:<b> {{starting_income_pct_loan}}</b>
+    <br> <br> Loan estimated repayments as % of starting salary:<b> {{starting_income_pct_loan}}</b>
     <br> ISA estimated repayments as % of starting salary: <b>{{starting_income_pct_isa}}</b>
   </div>
   <div id="monthly_payment_comparison">

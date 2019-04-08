@@ -22,8 +22,8 @@ export default new Vuex.Store({
       school_avg_major_income: 70000,
       income_low:60000,
       income_high:80000,
-      discount_rate:3,
-      income_growth_rate: 2
+      discount_rate:4,
+      income_growth_rate: 3
   },
   getters:{
     income_share_rate: state => {return Math.round(state.funding_amount*state.income_share_rate_per_10k/10000*100)/100},
