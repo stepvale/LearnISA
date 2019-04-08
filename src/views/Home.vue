@@ -1,6 +1,6 @@
 <template>
   <div class="Lesson1.0">
-    <router-link to="/home">Back</router-link> |
+    <router-link to="/">Back</router-link> |
     <router-link to="/Lesson1.1">Next</router-link>
     <h1>Welcome to the Academy!</h1>
     <div class ="textbody">You're here because you need money to pay for college and aren't afraid to think out of the box.
