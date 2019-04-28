@@ -1,5 +1,5 @@
 <template>
-  <div id="Lesson4.2">
+  <div id="Lesson4-2">
     <div class="back-next-buttons">
       <router-link to="/Lesson4.1">Back</router-link> |
       <router-link to="/Lesson4.3">Next</router-link>

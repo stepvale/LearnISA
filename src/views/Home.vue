@@ -1,7 +1,7 @@
 <template>
   <div id="Lesson1.0">
     <div class="back-next-buttons">
-      <router-link to="/">Back</router-link>|
+      <!-- <router-link to="/">Back</router-link>| -->
       <router-link to="/Lesson1.1">Next </router-link>
     </div>
     <h1>1.0 Welcome to the Academy!</h1>

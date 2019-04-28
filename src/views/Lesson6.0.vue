@@ -1,5 +1,5 @@
 <template>
-  <div id="Lesson6.0">
+  <div id="Lesson6-0">
     <div class="back-next-buttons">
       <router-link to="/Lesson5.2">Back</router-link> |
       <router-link to="/Lesson7.0">Next</router-link>
@@ -39,7 +39,7 @@
       <li> Repayment cap: <input type="number" id="repayment_cap" :value="repayment_cap" @input='update_repayment_cap'></li>
       <li> Lowest expected starting salary<input type="number" id="income_low" :value="income_low" @input='update_income_low'></li>
       <li> Highest expected starting salary: <input type="number" id="income_high" :value="income_high" @input='update_income_high'></li>
-      <li> Mid. expected starting salary: <span class='em'>{{expected_income}}</span></li>
+      <li> <i>Average</i> expected starting salary: <span class='em'>{{expected_income}}</span></li>
     </ul>
       <div id="sim_notes">
         <b>Notes:</b>

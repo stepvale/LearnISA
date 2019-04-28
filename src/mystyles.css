@@ -58,15 +58,24 @@ input[type=number] {
 }
 
 .textbody {
-  width:1000px;
+  width:700px;
+  margin:15px 20px 5px 15px;
+}
+
+#Lesson6-0 .textbody {
+  width:450px;
   margin:15px 20px 5px 5px;
 }
+
  #value_comparison, #risk_comparison {
    float:right;
    width: 305px;
-   margin: 1px;
+   margin-right:2px;
+   margin-bottom: 5px;
    text-align: center;
-
+   border-style: solid;
+   border-width: 2px;
+   border-color: #2c3e50;
  }
 #chart{
   float:right;
@@ -74,7 +83,7 @@ input[type=number] {
 
 #update_chart_button {
   position:relative;
-  left:-75px;
+  left:0px;
 }
 
 #update_chart_button button{
