@@ -1,11 +1,12 @@
 <template>
-  <div class="Lesson1.3">
+  <div id="Lesson1.3">
+    <div class="back-next-buttons">
     <router-link to="/Lesson1.2">Back</router-link> |
     <router-link to="/Lesson1.4">Next</router-link>
+  </div>
     <h1>About You</h1>
-    <div class ="textbody">OK. Let's get to know each other.
-      <br>
-      <br>
+    <div class ="textbody">
+      <p>OK. Let's get to know each other.</p>
 I am a <select>
   <option value = "student">student</option>
   <option value = "parent">parent of a student</option>

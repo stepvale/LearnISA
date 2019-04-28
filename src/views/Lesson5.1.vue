@@ -1,12 +1,13 @@
 <template>
-  <div class="Lesson5.1">
-    <router-link to="/Lesson5.0">Back</router-link> |
-    <router-link to="/Lesson5.2">Next</router-link>
+  <div id="Lesson5.1">
+    <div class="back-next-buttons">
+      <router-link to="/Lesson5.0">Back</router-link> |
+      <router-link to="/Lesson5.2">Next</router-link>
+    </div>
     <h1>Major</h1>
     <div class ="textbody">
-
-You said you're majoring in {{major}}. You can find the average income for {{major}} majors from {{school}} is by going to your school's website.
-Please find that amount and enter it here: <input type="number" id="school_avg_major_income" :value="school_avg_major_income" @input='update_school_avg_major_income'>
+      <p>You said you're majoring in {{major}}. You can find the average income for {{major}} majors from {{school}} is by going to your school's website.</p>
+      <p>Please find that amount and enter it here: <input type="number" id="school_avg_major_income" :value="school_avg_major_income" @input='update_school_avg_major_income'></p>
 </div>
 
   </div>

@@ -1,15 +1,14 @@
 <template>
-  <div class="Lesson1.0">
-    <router-link to="/">Back</router-link> |
-    <router-link to="/Lesson1.1">Next</router-link>
+  <div id="Lesson1.0">
+    <div class="back-next-buttons">
+      <router-link to="/">Back</router-link>|
+      <router-link to="/Lesson1.1">Next </router-link>
+    </div>
     <h1>Welcome to the Academy!</h1>
-    <div class ="textbody">You're here because you need money to pay for college and aren't afraid to think out of the box.
-<br>
-<br>
-I like your style.
-<br>
-<br>
-This mini-class will teach you what you need to know about Income Share Agreements.
+    <div class ="textbody">
+      <p>You're here because you need money to pay for college and aren't afraid to think out of the box.</p>
+      <p> I like your style.</p>
+      <p>This mini-class will teach you what you need to know about Income Share Agreements.</p>
 </div>
 
   </div>
@@ -41,17 +40,5 @@ export default {
     'decrement'
   ])
 }
-
-
-// <button @click='increment'>+</button>
-// <button @click='decrement'>-</button>
-
-// computed: mapState({
-//   magic_number: state => state.magic_number,
-//   magic_numberAlias: 'magic_number',
-//   magic_numberPlusLocalState(state){
-//     return state.magic_number + this.localMagic_number;
-//   }
-// })
 
 </script>

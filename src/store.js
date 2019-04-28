@@ -68,6 +68,18 @@ export default new Vuex.Store({
       }
       return cash_flows_isa_array
     },
+    labeled_cash_flows_loan:(state,getters) =>{
+      let labeled_array_loan = getters.cash_flows_loan.slice(0);
+      labeled_array_loan.unshift("Loan Cash Flows");
+      return labeled_array_loan;
+      // return labeled_array;
+    },
+    labeled_cash_flows_isa:(state,getters) =>{
+      let labeled_array_isa = getters.cash_flows_isa.slice(0);
+      labeled_array_isa.unshift("ISA Cash Flows");
+      return labeled_array_isa;
+      // return labeled_array;
+    },
     npv_loan: (state,getters) => {
       return Math.round(-1*(getters.cash_flows_loan.reduce(
         (accumulator, currentValue, index) =>
@@ -83,8 +95,10 @@ export default new Vuex.Store({
       )));
     },
     starting_income_pct_loan: (state,getters) => {
-      var first_period_pmt = getters.cash_flows_loan[0];
-      var starting_monthly_income= getters.expected_income/12;
+      let first_period_pmt = getters.cash_flows_loan[0];
+      console.log(first_period_pmt);
+      let starting_monthly_income= getters.expected_income/12;
+      // return 1000/first_period_pmt;
       return Math.round(first_period_pmt/starting_monthly_income*100*100)/100;
      },
     starting_income_pct_isa: (state,getters) => {return getters.income_share_rate}

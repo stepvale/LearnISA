@@ -1,19 +1,20 @@
 <template>
-  <div class="Lesson5.2">
-    <router-link to="/Lesson5.1">Back</router-link> |
-    <router-link to="/Lesson6.0">Next</router-link>
+  <div id="Lesson5.2">
+    <div class="back-next-buttons">
+      <router-link to="/Lesson5.1">Back</router-link> |
+      <router-link to="/Lesson6.0">Next</router-link>
+    </div>
     <h1>Career Plans</h1>
     <div class ="textbody">
-      But that's just the average. Your income will depend on what job you take, where you live, and whether you go on for more graduate school.
-      Even if you're not sure of your plans (which is natural and OK!), please go to www.payscale.com  or www.paysa.com, look up some salaries for a job you want, and enter a range below.
-      <br><br>
-      While the average income for someone in my major is <b>{{school_avg_major_income}}</b>,
+      <p>But that's just the average. Your income will depend on what job you take, where you live, and whether you go on for more graduate school.
+      Even if you're not sure of your plans (which is natural and OK!), please go to www.payscale.com  or www.paysa.com, look up some salaries for a job you want, and enter a range below.</p>
+      <p>While the average income for someone in my major is <span class ='em'>{{school_avg_major_income}}</span>,
        based on my research I expect to earn between a low of
        <input type="number" id="income_low" :value="income_low" @input='update_income_low'>
         and a high of
         <input type="number" id="income_high" :value="income_high" @input='update_income_high'>
-         in my first job after graduation.
-      <br> Based on this range, my expected income is about {{expected_income}}.
+         in my first job after graduation.</p>
+      <p>Based on this range, my expected income is about <span class ='em'>{{expected_income}}</span>.</p>
 </div>
 
   </div>

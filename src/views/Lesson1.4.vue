@@ -1,12 +1,13 @@
 <template>
-  <div class="Lesson1.4">
-    <router-link to="/Lesson1.3">Back</router-link> |
-    <router-link to="/Lesson2.0">Next</router-link>
+  <div id="Lesson1.4">
+    <div class="back-next-buttons">
+      <router-link to="/Lesson1.3">Back</router-link> |
+      <router-link to="/Lesson2.0">Next</router-link>
+    </div>
     <h1>Alternatives</h1>
-    <div class ="textbody">It's always good to know your options.
-      <br>
-      <br>
-    I need $<input type="number" id="funding_amount" :value="funding_amount" @input="update_funding_amount">
+    <div class ="textbody">
+      <p>It's always good to know your options.</p>
+    <p>I need $<input type="number" id="funding_amount" :value="funding_amount" @input="update_funding_amount">
     to pay for school.
     If I don't get an ISA, I would get a
     <select>
@@ -14,9 +15,8 @@
      <option value = "Private">Private</option>
    </select>
  loan with an interest rate of <input type="number" id="loan_rate" :value="loan_rate" @input='update_loan_rate'>
-%.
-    <br>
-    <br>
+%.</p>
+    
 </div>
 
   </div>

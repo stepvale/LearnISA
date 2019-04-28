@@ -1,16 +1,17 @@
 <template>
-  <div class="Lesson4.4">
-    <router-link to="/Lesson4.3">Back</router-link> |
-    <router-link to="/Lesson5.0">Next</router-link>
+  <div id="Lesson4.4">
+    <div class="back-next-buttons">
+      <router-link to="/Lesson4.3">Back</router-link> |
+      <router-link to="/Lesson5.0">Next</router-link>
+    </div>
     <h1>Repayment Cap</h1>
     <div class ="textbody">
-      The repayment cap is another way to protect you. It limits the total amount you'll ever repay to some multiple of the funding amount. From the same site as before, enter the repayment cap:
-<br><br>
-I will pay up to, but no more than,
-<input type="number" id="repayment_cap" :value="repayment_cap" @input='update_repayment_cap'>
-times the funding amount. Since I'm getting
-{{funding_amount}}, the ISA could end up costing me {{repayment_cap_amt}}.
-
+      <p>The repayment cap is another way to protect you. It limits the total amount you'll ever repay to some multiple of the funding amount. From the same site as before, enter the repayment cap:</p>
+      <p>I will pay up to, but no more than,
+      <input type="number" id="repayment_cap" :value="repayment_cap" @input='update_repayment_cap'>
+      times the funding amount. </p>
+      <p>Since I'm getting <span class ='em'>
+      {{funding_amount}}</span>, the ISA could end up costing me <span class ='em'>{{repayment_cap_amt}}</span>.</p>
 </div>
 
   </div>
