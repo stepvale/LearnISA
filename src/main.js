@@ -10,7 +10,6 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 //import my custom css
-// import '/mystyles.css' from './mystyles'
 import('./mystyles.css')
 
 
@@ -21,6 +20,3 @@ new Vue({
   store,
   render: h => h(App)
 }).$mount('#app')
-
-// store.commit('increment');
-// console.log(store.state.magic_number);

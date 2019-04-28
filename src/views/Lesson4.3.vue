@@ -4,7 +4,7 @@
       <router-link to="/Lesson4.2">Back</router-link> |
       <router-link to="/Lesson4.4">Next</router-link>
     </div>
-    <h1>Income Floor</h1>
+    <h1>4.3 Income Floor</h1>
     <div class ="textbody">
       <p>The income floor is there so that you don't have to pay anything if you earn below the floor amount. It's there to make sure that the investor only gets paid if you're successful.</p>
       <p>From the same site as before, enter the income floor:</p>

@@ -3,7 +3,6 @@
     <div id="nav">
       <ul>
       <li><router-link to="/">1. Welcome</router-link> </li>
-      <!-- <router-link to="/Lesson1.0">_•_</router-link> -->
       <li><router-link to="/Lesson1.1">•</router-link></li>
       <li><router-link to="/Lesson1.2">•</router-link></li>
       <li><router-link to="/Lesson1.3">•</router-link></li>
@@ -33,23 +32,3 @@
     <router-view/>
   </div>
 </template>
-
-<script>
-// import NavBar from '@/components/NavBar.vue'
-
-</script>
-
-<style>
-TODO: DELETE
-/* #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-ol {
-  list-style-position: inside;
-} */
-</style>

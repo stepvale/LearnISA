@@ -4,11 +4,11 @@
       <router-link to="/Lesson5.2">Back</router-link> |
       <router-link to="/Lesson7.0">Next</router-link>
     </div>
-    <h1>So, is an ISA Right for Me?</h1>
+    <h1>6.0 So, is an ISA Right for Me?</h1>
 
     <div id ="risk_comparison">
       <h2>Risk Comparison</h2>
-      <p>Repayments as % of starting salary:</p>
+      <p>Starting repayments as % of low salary:</p>
       <p>Loan:<span class='em'> {{starting_income_pct_loan}}%</span>
       ISA:<span class='em'> {{starting_income_pct_isa}}%</span></p>
     </div>
@@ -28,8 +28,8 @@
     </div>
 
     <div class ="textbody">
-      <p>Glad you asked! Check out the Comparison sections on the right to see how an ISA compares to your loan options.</p>
-      <p>Feel free to play around with any of the inputs to see how they change things:</p>
+      <p>Glad you asked! Check out the comparisons on the right.</p>
+      <p>Feel free to play around with any of the inputs below to see how they change things:</p>
       <ul>
       <li>Funding Amount: $<input type="number" id="funding_amount" :value="funding_amount" @input="update_funding_amount"></li>
       <li> Loan Rate: <input type="number" id="loan_rate" :value="loan_rate" @input='update_loan_rate'>%</li>
@@ -37,26 +37,19 @@
       <li> ISA rate: <span class='em'>{{income_share_rate}}%</span> of my what I earn.</li>
       <li> ISA duration: <input type="number" id="duration_isa" :value="duration_isa" @input='update_duration_isa'> months</li>
       <li> Repayment cap: <input type="number" id="repayment_cap" :value="repayment_cap" @input='update_repayment_cap'></li>
-      <li> Minimum expected starting salary<input type="number" id="income_low" :value="income_low" @input='update_income_low'></li>
-      <li> Maximum expected starting salary: <input type="number" id="income_high" :value="income_high" @input='update_income_high'></li>
-      <li> Average expected starting salary: <span class='em'>{{expected_income}}</span></li>
+      <li> Lowest expected starting salary<input type="number" id="income_low" :value="income_low" @input='update_income_low'></li>
+      <li> Highest expected starting salary: <input type="number" id="income_high" :value="income_high" @input='update_income_high'></li>
+      <li> Mid. expected starting salary: <span class='em'>{{expected_income}}</span></li>
     </ul>
       <div id="sim_notes">
         <b>Notes:</b>
         <ul>
+          <li>The <b>net cost</b> of each funding amount equals the amount you receive to pay for school minus the total of what you'll have to pay back.</li>
+          <li>The <b>risk</b> of each option is shown as the % of your <i>lowest </i> expected starting income that will go towards repayment. If you're paying too much of what you earn towards loans (e.g. 20% or more), you could be at risk of defaulting.</li>
           <li>The below calculations assume that income will grow by 3% a year.</li>
-          <li>The net cost of each funding amount equals the amount you receive to pay for school minus the total of what you'll have to pay back.</li>
-          <li>The risk of each option is shown as the % of your <i>lowest </i> expected starting income that will go towards repayment. If you're paying too much of what you earn towards loans (e.g. 20% or more), you could be at risk of defaulting.</li>
         </ul>
 </div>
 
-
-  <!-- TODO Delete -->
-  <!-- <div id="monthly_payment_comparison">
-    <h2><i>Monthly Payments Comparison</i></h2>
-    <br> <b>Loan:</b> {{labeled_cash_flows_loan}}
-    <br><b> ISA: </b>{{labeled_cash_flows_isa}}
-  </div> -->
 </div>
 
   </div>
@@ -124,7 +117,7 @@ export default {
   ])
 },
 methods:{
-  update_chart(e){
+  update_chart(){
     this.handler.$emit('dispatch', (options) => options.load({
         columns: [
         this.labeled_cash_flows_loan,
@@ -150,11 +143,9 @@ methods:{
   },
   update_income_low(e){
     this.$store.commit('update_income_low',e.target.value);
-    console.log(this.$store.getters.expected_income);
   },
   update_income_high(e){
     this.$store.commit('update_income_high',e.target.value);
-    console.log(this.$store.getters.expected_income);
   }
  }
 }

@@ -4,7 +4,7 @@
       <router-link to="/Lesson4.3">Back</router-link> |
       <router-link to="/Lesson5.0">Next</router-link>
     </div>
-    <h1>Repayment Cap</h1>
+    <h1>4.4 Repayment Cap</h1>
     <div class ="textbody">
       <p>The repayment cap is another way to protect you. It limits the total amount you'll ever repay to some multiple of the funding amount. From the same site as before, enter the repayment cap:</p>
       <p>I will pay up to, but no more than,

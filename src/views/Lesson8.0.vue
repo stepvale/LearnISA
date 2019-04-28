@@ -13,27 +13,3 @@
 
   </div>
 </template>
-
-<script>
-import {mapState,mapMutations} from 'vuex';
-
-// TODO delete below
-export default {
-  name: 'lesson1',
-  data(){ //local data
-    return {
-      localMagic_number: 3
-    }
-  },
-  computed: mapState([
-    'magic_number',
-    'myemail_username',
-    'myemail_domain'
-  ]),
-  methods: mapMutations([
-    'increment',
-    'incrementBy',
-    'decrement'
-  ])
-}
-</script>

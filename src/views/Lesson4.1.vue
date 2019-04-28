@@ -4,7 +4,7 @@
       <router-link to="/Lesson4.0">Back</router-link> |
       <router-link to="/Lesson4.2">Next</router-link>
     </div>
-    <h1>Income Share Rate</h1>
+    <h1>4.1 Income Share Rate</h1>
     <div class ="textbody">
       <p>The income share rate is how much of your future income you will pay back to the investors. The more money they give you now, the higher the rate will be. It can also depend on things like what your major is.</p>
 

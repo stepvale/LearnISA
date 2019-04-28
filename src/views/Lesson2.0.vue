@@ -4,7 +4,7 @@
       <router-link to="/Lesson1.4">Back</router-link> |
       <router-link to="/Lesson2.1">Next</router-link>
     </div>
-    <h1>What is an ISA?</h1>
+    <h1>2.0 What is an ISA?</h1>
     <div class ="textbody">
 <p>An "Income Share Agreement" means that you get cash now to pay for college.</p>
  <p>The person or organization who gave you the money is called an "investor."</p>

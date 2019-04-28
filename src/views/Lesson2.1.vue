@@ -4,7 +4,7 @@
       <router-link to="/Lesson2.0">Back</router-link> |
       <router-link to="/Lesson2.2">Next</router-link>
     </div>
-    <h1>How is This Different from a Loan?</h1>
+    <h1>2.1 How is This Different from a Loan?</h1>
     <div class ="textbody">
       <p>The traditional way to get money for college is through student loans. Loans are a type of debt.</p>
       <p>So are ISAs a type of debt too?</p>

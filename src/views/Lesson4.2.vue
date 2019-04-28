@@ -4,7 +4,7 @@
       <router-link to="/Lesson4.1">Back</router-link> |
       <router-link to="/Lesson4.3">Next</router-link>
     </div>
-    <h1>Duration</h1>
+    <h1>4.2 Duration</h1>
     <div class ="textbody">
       <p>The <i>duration</i> of the agreement, also called the term, is how many months it lasts. From the same site as before, enter the duration:</p>
       <p>I will have to pay <span class='em'>{{income_share_rate}}%</span> of my income for
